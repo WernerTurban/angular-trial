@@ -55,8 +55,6 @@ export class UserFormComponent implements OnInit {
     if (this.userForm.valid) {
       this.createUser();
       this.returnedUser.emit(this.user);
-    } else {
-      console.log(this.userForm);
     }
   }
 
@@ -66,7 +64,14 @@ export class UserFormComponent implements OnInit {
       this.userForm.value.username as string,
       this.userForm.value.email as string,
       this.userForm.value.phone as string
-    )
+    );
+    this.setUserId();
+  }
+
+  setUserId(): void {
+    if (this.editedUser && this.user) {
+      this.user.id = this.editedUser.id;
+    }
   }
 
   get formControls() {
