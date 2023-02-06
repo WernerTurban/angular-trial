@@ -1,0 +1,26 @@
+<div *ngIf="user" class="user-details">
+  <h1>User details</h1>
+  <div *ngIf="!editMode" class="details-container">
+    <div class="details-row">
+      <div class="user-info">
+        Name: {{ user.name }}
+      </div>
+      <div class="user-info">
+        Username: {{ user.username }}
+      </div>
+    </div>
+    <div class="details-row">
+      <div class="user-info">
+        Email: {{ user.email }}
+      </div>
+      <div class="user-info">
+        Phone: {{ user.phone }}
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!editMode" class="detail-buttons">
+    <button class="test-button" (click)="editUser()">Edit user</button>
+    <button [ngClass]="'delete-button'" (click)="deleteUser()">Delete user</button>
+  </div>
+  <app-user-form *ngIf="editMode" [editedUser]="user" (returnedUser)="submitEditedUser($event)"></app-user-form>
+</div>

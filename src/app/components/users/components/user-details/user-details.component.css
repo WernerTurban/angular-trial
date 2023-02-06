@@ -1,0 +1,24 @@
+.user-details {
+  width: 100%;
+}
+
+.details-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  width: calc(100% / 2 - 20px);
+}
+
+.detail-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-button {
+  background-color: #FF0000;
+  margin-left: 10px;
+}

@@ -1,0 +1,6 @@
+<a *ngIf="user" [routerLink]="['/users', user.id]" class="container">
+  <td class="column"> {{ user.name }}</td>
+  <td class="column"> {{ user.username }}</td>
+  <td class="column"> {{ user.email }}</td>
+  <td class="column"> {{ user.phone }}</td>
+</a>

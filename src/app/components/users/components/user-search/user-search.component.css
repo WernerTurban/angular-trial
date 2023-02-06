@@ -1,0 +1,8 @@
+.search-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.search-button {
+  margin-left: 10px;
+}
