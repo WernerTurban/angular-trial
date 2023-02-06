@@ -4,10 +4,10 @@
 
 This is an application for user management. It uses fake API  `https://jsonplaceholder.typicode.com/users` endpoint to show users as list and is also able to search users by username parameter.
 
-Every user has a user details view that gets mock data from the API with id parameter. Ony important details are displayed for this demo. 
+Every user has a user details view that gets mock data from the API with id parameter. Only important details are displayed for this demo. 
 
 User details can be edited, users can be created or deleted.
-Requests will be sent to the server and will get a response, but data won't be saved in the server.
+Requests are sent to the server and will get a response, but data won't be saved in the server.
 
 ## Instructions
 
